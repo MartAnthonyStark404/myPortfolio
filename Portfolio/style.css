@@ -10,10 +10,13 @@
     background-image: url("background1.jpg");
     background-size: cover;
     height: 100vh;
+    width: 100vw;
+    
 }
 .main .back {
     background: rgba(0, 0, 0, 0.8);
     height: 100vh;
+    width: 100vw;
 }
 .main .nav {
     display: flex;
@@ -113,3 +116,30 @@
 }
 
 /******RESPONSIVE MOBILE*******/
+@media screen and (max-width: 673px) {
+
+   .name p:nth-child(1) {
+    font-size: 50px;
+    font-weight: 600;
+
+    }
+    .name #web {
+        font-size: 12px;
+    }
+
+    .main button {
+        position: relative;
+        top: 30px;}
+    .name h2 {font-size: 14px;}
+
+    .nav ul{
+    margin: 0px 5px;
+    }
+
+    .nav a{ padding: 5px; font-size: 14px;}
+}
+
+@media screen and (max-width: 280px) {
+    .nav a{ padding: 3px;
+        font-size: 12px;}
+}
